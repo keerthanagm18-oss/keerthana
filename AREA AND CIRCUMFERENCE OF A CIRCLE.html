@@ -1,0 +1,20 @@
+void main(String args[])throws IOException
+{
+double r,area,circum;
+NumberFormatf=NumberFormat.getNumberInstance();
+f.setMaximumFractionDigits(2);
+InputStreamReader reader=new InputStreamReader(System.in);
+BufferedReader in=newBufferedReader(reader);
+System.out.println("ENTER THE VALUE OF RADIUS=");
+String text=in.readLine();
+r=Double.parseDouble(text);
+area=3.14*r*r;
+circum=2*3.14*r;
+System.out.println("PROGRAM TO CALCULATE  AREA AND CIRCUMFRENCE OF A CIRCLE");
+System.out.println("         INPUT     ");
+System.out.println("RADIUS OF THE CIRCLE:"+r);
+System.out.println("       OUTPUT   ");
+System.out.println("AREA OF A CIRCLE=:"+f.format(area));
+System.out.println("CIRCUMFERENCE OF THE CIRCLE:"+f.format(circum));
+}
+}
